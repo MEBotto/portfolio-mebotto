@@ -45,6 +45,30 @@ export default function Navbar() {
     },
   };
 
+  const listVariants = {
+    closed: {
+      x: "10vw",
+    },
+    opened: {
+      x: 0,
+      transition: {
+        when: "beforeChildren",
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const listItemVariants = {
+    closed: {
+      x: -100,
+      opacity: 0,
+    },
+    opened: {
+      x: 0,
+      opacity: 1,
+    },
+  };
+
   return (
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-lg">
       <div className="hidden md:flex gap-4 w-1/3">
@@ -106,13 +130,18 @@ export default function Navbar() {
           ></motion.div>
         </button>
         {open && (
-          <div className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl">
+          <motion.div
+            variants={listVariants}
+            initial="closed"
+            animate="opened"
+            className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-40"
+          >
             {links.map((link) => (
-              <Link href={link.url} key={link.title}>
-                {link.title}
-              </Link>
+              <motion.div variants={listItemVariants} key={link.title}>
+                <Link href={link.url}>{link.title}</Link>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         )}
       </div>
     </div>
