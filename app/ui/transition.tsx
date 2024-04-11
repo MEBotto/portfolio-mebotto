@@ -30,7 +30,9 @@ export default function Transition({
           exit={{ opacity: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          {pathname.substring(1)}
+          {pathname.substring(1) === ""
+            ? "Home"
+            : pathname.substring(1)[0].toUpperCase() + pathname.substring(2)}
         </motion.div>
         <motion.div
           className="h-screen w-screen fixed bg-black rounded-b-[100px] z-40"
