@@ -34,13 +34,19 @@ export default function About() {
             />
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             <p className="text-lg ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-              ex nam vel quod soluta rem consequuntur deserunt alias, aliquam
-              repellendus, voluptatibus odit eveniet accusamus qui reprehenderit
-              quia autem voluptas voluptates.
+              I&apos;m Mariano Eloy Botto, a passionate frontend developer based
+              in Buenos Aires, Argentina. With two years of experience in the
+              programming world, my journey began with a love for new
+              technologies and creative problem-solving. Currently expanding my
+              skills to become a full-stack developer, I&apos;m exploring the
+              exciting realm of backend development while honing my frontend
+              capabilities. I thrive on learning and tackling challenges,
+              constantly seeking opportunities to grow and contribute to
+              innovative projects.
             </p>
             <span className="italic">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Driven by a passion for innovation and excellence in every
+              project.
             </span>
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
@@ -114,7 +120,7 @@ export default function About() {
               transition={{ delay: 0.2 }}
               className="font-bold text-2xl mb-12"
             >
-              EXPERIENCE & STUDIES
+              EXPERIENCE & EDUCATION
             </motion.h1>
             <motion.div
               initial={{ x: "-300px" }}
@@ -125,16 +131,14 @@ export default function About() {
                 {/* LEFT */}
                 <div className="w-1/3">
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Title of my job or study
+                    Looking for a first Job
                   </div>
-                  <div className="p-3 text-sm italic">
-                    Description of my job
-                  </div>
+                  <div className="p-3 text-sm italic">...</div>
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    Date of my job
+                    Currently
                   </div>
                   <div className="bg-white p-1 rounded text-sm font-semibold w-fit">
-                    Company of my job
+                    ...
                   </div>
                 </div>
                 {/* CENTER */}
@@ -158,16 +162,16 @@ export default function About() {
                 {/* RIGHT */}
                 <div className="w-1/3">
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Title of my job or study
+                    Programming Technician
                   </div>
                   <div className="p-3 text-sm italic">
-                    Description of my job
+                    Acquired knowledge in C#, SQL, OOP and MySQL
                   </div>
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    Date of my job
+                    2022 - 2024
                   </div>
                   <div className="bg-white p-1 rounded text-sm font-semibold w-fit">
-                    Company of my job
+                    UTN FRSN - EDUCATION
                   </div>
                 </div>
               </div>
@@ -175,16 +179,17 @@ export default function About() {
                 {/* LEFT */}
                 <div className="w-1/3">
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Title of my job or study
+                    Electronics Technician
                   </div>
                   <div className="p-3 text-sm italic">
-                    Description of my job
+                    I acquired knowledge in C and C++ as well as teamwork and
+                    responsibility
                   </div>
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    Date of my job
+                    2015 - 2021
                   </div>
                   <div className="bg-white p-1 rounded text-sm font-semibold w-fit">
-                    Company of my job
+                    EESTN ° 6 - EDUCATION
                   </div>
                 </div>
                 {/* CENTER */}
