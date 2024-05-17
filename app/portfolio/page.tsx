@@ -9,11 +9,11 @@ const items = [
   {
     id: 1,
     color: "from-red-300 to-blue-300",
-    title: "Coming Soon New Project",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "/coming_soon.png",
-    link: "#",
-    repo: "#",
+    title: "Manga E-COMMERCE",
+    desc: "I developed an e-commerce platform using React, Redux, and Node.js, integrating payment gateways to process transactions, implementing sockets for real-time communication, and using MongoDB for managing product and user data.",
+    img: "/manga_commerce.png",
+    link: "https://manga-commerce-frontend.vercel.app/",
+    repo: "https://github.com/MEBotto/MangaCommerce_Backend",
   },
   {
     id: 2,
@@ -73,7 +73,14 @@ export default function Portfolio() {
                     {item.title}
                   </h1>
                   <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
-                    <Image src={item.img} alt="Project image" fill />
+                    <Image
+                      src={item.img}
+                      alt="Project image"
+                      layout="fill"
+                      objectFit="cover"
+                      objectPosition="center"
+                      className="rounded-lg"
+                    />
                   </div>
                   <p className="w-80 md:w-96 lg:w-[500px] xl:w-[600px">
                     {item.desc}
